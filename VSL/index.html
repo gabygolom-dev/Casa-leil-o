@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f0e9">
+  <meta name="description" content="Antes de dar o lance em leilões imobiliários, assista ao resumo da aula da Casa & Leilão.">
+  <title>Resumo da aula | Casa & Leilão</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="header wrap">
+    <a class="brand" href="#inicio" aria-label="Casa & Leilão — início">
+      <svg class="brand-symbol" viewBox="200 180 960 890" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M322 459 568 238 800 459" stroke="currentColor" stroke-width="49" stroke-linecap="round" stroke-linejoin="round"/>
+        <g transform="rotate(15 535 690)" stroke="currentColor" stroke-linejoin="round">
+          <path d="M420 512H668V788H420Z" stroke-width="22"/>
+          <rect x="404" y="491" width="283" height="35" rx="18" stroke-width="20"/>
+          <rect x="403" y="773" width="284" height="34" rx="17" fill="currentColor" stroke-width="16"/>
+          <rect x="401" y="826" width="285" height="40" rx="20" stroke-width="20"/>
+          <path d="M680 643H717V699H680Z" fill="currentColor" stroke-width="12"/>
+          <path d="M728 640Q738 637 752 649L771 663V696L752 710Q736 719 728 708Z" stroke-width="18"/>
+          <path d="M771 663C867 684 1007 661 1102 680Q1142 689 1141 714Q1138 742 1102 740C1002 732 867 700 771 696Z" stroke-width="18"/>
+        </g>
+        <path d="M302 943Q302 930 318 930H686Q703 930 704 945H718Q741 945 741 968V1018Q741 1029 729 1029H263Q249 1029 249 1017V970Q249 945 273 945H302Z" fill="currentColor"/>
+        <path d="M269 975H721" stroke="var(--paper)" stroke-width="20" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-name">CASA <i>&</i> LEILÃO</span>
+    </a>
+    <span class="header-note">Conhecimento antes do lance.</span>
+  </header>
+  <main id="inicio">
+    <section class="hero wrap" aria-labelledby="title">
+      <p class="eyebrow"><span></span> RESUMO DA AULA</p>
+      <h1 id="title">Antes de dar o lance em<br class="desktop-break"> <em>leilões imobiliários,</em><br> assista ao vídeo abaixo.</h1>
+      <div class="video-frame" id="video-frame">
+        <iframe id="drive-player" class="drive-player"
+          src="https://drive.google.com/file/d/1KXicJG07nr_MBdr6cXBKvsUWVIbuuNJe/preview"
+          title="Resumo da aula — Casa & Leilão"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <video id="lesson" controls playsinline preload="metadata" hidden aria-label="Resumo da aula com Bruno, da Casa & Leilão"></video>
+        <div class="pause-overlay" id="pause-overlay" hidden>
+          <span class="eyebrow">CONTINUE SUA AULA</span>
+          <h2>Esse vídeo sairá<br>do ar em breve.</h2>
+          <p>Essa é sua última chance de assistir o conteúdo até o final.</p>
+          <button class="button" id="resume" type="button">Continuar assistindo <span aria-hidden="true">▶</span></button>
+        </div>
+      </div>
+      <div class="video-caption"><span>CASA & LEILÃO</span><span>Leilão imobiliário com segurança.</span></div>
+    </section>
+    <section class="contact wrap" aria-labelledby="contact-title">
+      <div class="contact-heading"><p class="eyebrow">SEU PRÓXIMO PASSO</p><h2 id="contact-title">Agende uma conversa<br>com a <em>Casa & Leilão.</em></h2></div>
+      <div class="contact-action">
+        <p class="availability"><span></span> Para esta semana, temos algumas vagas disponíveis.</p>
+        <p class="contact-copy">Clique no botão para conversarmos sobre o seu próximo arremate com <strong>segurança</strong> e <strong>potencial de lucro</strong>.</p>
+        <a class="button" id="whatsapp" href="https://wa.me/5511947947742?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20conversa%20com%20a%20equipe%20da%20Casa%20%26%20Leil%C3%A3o%20sobre%20meu%20pr%C3%B3ximo%20arremate." target="_blank" rel="noopener noreferrer">Quero conversar com a equipe <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer wrap"><span>CASA & LEILÃO</span><small>© <span id="year">2026</span> Casa & Leilão. Todos os direitos reservados.</small></footer>
+</body>
+</html>
