@@ -9,11 +9,9 @@ Para hospedagem estática, publique o conteúdo desta pasta, com `index.html` na
 
 ## Vídeo
 
-Google Drive incorporado pela URL `/preview`, com suporte a tela cheia.
-Arquivo: `1KXicJG07nr_MBdr6cXBKvsUWVIbuuNJe`.
-O arquivo deve permitir visualização por qualquer pessoa com o link para que visitantes sem login possam assistir.
+Player TrackPlay incorporado diretamente na página, com wrapper responsivo 16:9 e imagem de capa. As classes, URLs e script assíncrono correspondem ao código fornecido pelo usuário. Preconnect, DNS prefetch e preload ficam no `head`.
 
-O iframe do Drive não expõe uma API pública de eventos de pausa/reprodução. Por isso, o aviso de pausa personalizado não está ativo nessa integração. O código para vídeo nativo continua disponível: `VIDEO_URL` em `app.js` aceita URL direta MP4/WebM e substitui o iframe. Não use um link `/view` ou `/preview` como URL de vídeo nativo.
+O TrackPlay gerencia a reprodução, controles e comportamento móvel. Não há mais iframe do Google Drive nem vídeo nativo/aviso de pausa paralelo; qualquer aviso de pausa deve ser configurado no TrackPlay ou integrado por uma API documentada do provedor.
 
 ## WhatsApp
 
@@ -25,7 +23,7 @@ Paleta off-white e dourado inspirada na imagem enviada. O símbolo foi recriado 
 
 ## Validação realizada
 
-JavaScript e diff verificados. Layout verificado em Chromium nas larguras 1440 e 390 px, sem rolagem horizontal. Número do WhatsApp e exibição/fechamento do aviso conferidos com eventos simulados; reprodução real pendente do vídeo.
+JavaScript e diff verificados. Layout verificado em Chromium nas larguras 1440 e 390 px, sem rolagem horizontal. Incorporação TrackPlay e link do WhatsApp verificados. A validação de reprodução real depende do acesso aos serviços externos do TrackPlay.
 
 ## GitHub Pages
 
