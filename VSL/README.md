@@ -11,7 +11,7 @@ Para hospedagem estática, publique o conteúdo desta pasta, com `index.html` na
 
 Player TrackPlay incorporado diretamente na página, com wrapper responsivo 16:9 e imagem de capa. As classes, URLs e script assíncrono correspondem ao código fornecido pelo usuário. Preconnect, DNS prefetch e preload ficam no `head`.
 
-O TrackPlay gerencia a reprodução, controles e comportamento móvel. Não há mais iframe do Google Drive nem vídeo nativo/aviso de pausa paralelo; qualquer aviso de pausa deve ser configurado no TrackPlay ou integrado por uma API documentada do provedor.
+O TrackPlay gerencia a reprodução, controles e comportamento móvel. Não há mais iframe do Google Drive. O aviso de pausa em `app.js` captura eventos reais de elementos `<video>` inseridos no DOM do player e retoma pelo botão. Foi testado com vídeo local em reprodução real nas larguras 1440 e 390 px. A compatibilidade com o TrackPlay ainda não foi confirmada porque o ambiente bloqueia o script externo. Se o provedor isolar o vídeo em iframe de outra origem ou Shadow DOM, será necessária integração pela API documentada do TrackPlay ou configuração do aviso no painel do provedor. O aviso HTML também não é garantido na tela cheia nativa do celular.
 
 ## WhatsApp
 
