@@ -3,5 +3,8 @@
 /* Destaques da conversa e assinatura da marca. */
 .availability{font-size:clamp(20px,2vw,25px);font-weight:600;line-height:1.35;color:#705637;gap:12px;margin-bottom:20px}.availability span{width:7px;height:7px}.contact-copy strong{color:#705637;font-weight:700;text-decoration:underline;text-decoration-color:#b59b79;text-decoration-thickness:2px;text-underline-offset:4px}.brand{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:7px}.brand span{color:var(--gold)}
 
-.header{height:auto;min-height:180px;padding-block:22px}.brand{flex-direction:column;flex-wrap:nowrap;gap:10px}.brand-symbol{width:98px;height:90px;color:var(--gold);overflow:visible}.brand .brand-name{color:var(--ink);font-style:normal}.brand-name i{color:var(--gold);font-weight:normal}@media(max-width:700px){.header{justify-content:center;min-height:169px;padding-block:20px}.brand-symbol{width:94px;height:86px}}
+.header{height:auto;min-height:116px;padding-block:14px;justify-content:center}.brand{flex-direction:column;flex-wrap:nowrap;gap:7px;font-size:20px}.brand-symbol{width:64px;height:59px;color:var(--gold);overflow:visible}.brand .brand-name{color:var(--ink);font-style:normal}.brand-name i{color:var(--gold);font-weight:normal}@media(max-width:700px){.header{min-height:106px;padding-block:12px}.brand{font-size:18px}.brand-symbol{width:60px;height:55px}}
 .pause-overlay{z-index:10}.pause-overlay .button:disabled{cursor:wait;opacity:.7}.pause-overlay #resume-error{font-size:11px;margin:10px 0 0}
+
+/* Topo compacto: aproxima a chamada do logo e antecipa o vídeo. */
+.hero{padding-top:26px}h1{margin-top:16px;margin-bottom:28px}@media(max-width:700px){.hero{padding-top:20px}h1{margin-top:14px;margin-bottom:24px}}
